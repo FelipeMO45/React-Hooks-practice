@@ -8,14 +8,15 @@ const LazyLoad: React.FC = () => {
   const [view, setView] = useState<string>('home');
 
   return (
-    <div>
+    <div className="container">
+      <h1>LazyLoad</h1>
       <nav>
         <ul>
           <li><button onClick={() => setView('home')}>Home</button></li>
           <li><button onClick={() => setView('about')}>About</button></li>
         </ul>
       </nav>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="SuspenseFallback">Loading...</div>}>
         {view === 'home' && <Home />}
         {view === 'about' && <About />}
       </Suspense>
