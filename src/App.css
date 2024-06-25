@@ -189,7 +189,7 @@ nav button:hover {
 
 /* Estilos para el contenedor principal del contador */
 .counter-container {
-  max-width: 300px;
+  max-width: 600px;
   margin: 20px auto;
   padding: 20px;
   background-color: #f8f9fa;
