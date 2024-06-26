@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './styles/formComponente.module.css';
 
-const Form: React.FC = () => {
+const Form   = () => {
   const [inputValue, setInputValue] = useState<string>('');
   const [lastKeyPressed, setLastKeyPressed] = useState<string>('');
 

@@ -4,7 +4,7 @@ import { delayImport } from './delayImport';
 const Home = React.lazy(() => delayImport(() => import('./Home'), 2000));
 const About = React.lazy(() => delayImport(() => import('./About'), 2000));
 
-const LazyLoad: React.FC = () => {
+const LazyLoad= () => {
   const [view, setView] = useState<string>('home');
 
   return (
